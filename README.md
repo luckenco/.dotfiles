@@ -12,6 +12,7 @@
 - [starship](https://github.com/starship/starship)
 - [tmux](https://github.com/tmux/tmux)
 - [yabai](https://github.com/koekeishiya/yabai)
+- [zellij](https://zellij.dev/)
 - [zed](http://zed.dev/)
 - zsh
 

@@ -1,0 +1,37 @@
+layout {
+    pane size=1 borderless=true {
+        plugin location="tab-bar"
+    }
+    pane split_direction="vertical" {
+        pane size="30%" command="claude"
+        pane focus=true size="45%"
+        pane size="25%" {
+            pane size="50%" command="jj" {
+                args "status"
+            }
+            pane size="50%" command="jj" {
+                args "log"
+            }
+        }
+    }
+    pane size=1 borderless=true {
+        plugin location="status-bar"
+    }
+
+    swap_tiled_layout name="mission-control" {
+        tab focus=true hide_floating_panes=true {
+            pane split_direction="vertical" {
+                pane size="30%" command="claude"
+                pane focus=true size="45%"
+                pane size="25%" {
+                    pane size="50%" command="jj" {
+                        args "status"
+                    }
+                    pane size="50%" command="jj" {
+                        args "log"
+                    }
+                }
+            }
+        }
+    }
+}
