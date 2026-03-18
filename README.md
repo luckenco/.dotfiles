@@ -10,6 +10,7 @@
 - [nvim](https://github.com/neovim/neovim)
 - [shkd](https://github.com/koekeishiya/skhd)
 - [starship](https://github.com/starship/starship)
+- [Sublime Text](https://www.sublimetext.com)
 - [tmux](https://github.com/tmux/tmux)
 - [yabai](https://github.com/koekeishiya/yabai)
 - [zellij](https://zellij.dev/)
