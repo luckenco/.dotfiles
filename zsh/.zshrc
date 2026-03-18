@@ -46,6 +46,7 @@ export PATH
 command -v pyenv >/dev/null && eval "$(pyenv init -)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f "$HOME/.deno/env" ] && . "$HOME/.deno/env"
+eval "$(atuin init zsh)"
 
 # Editor
 if [[ -n $SSH_CONNECTION ]]; then

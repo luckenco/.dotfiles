@@ -1,21 +1,29 @@
+// zjstatus: https://github.com/dj95/zjstatus/wiki/1-%E2%80%90-Installation
 layout {
-    pane size=1 borderless=true {
-        plugin location="tab-bar"
-    }
-    pane split_direction="vertical" {
-        pane size="30%" command="claude"
-        pane focus=true size="45%"
-        pane size="25%" {
-            pane size="50%" command="jj" {
-                args "status"
-            }
-            pane size="50%" command="jj" {
-                args "log"
+    default_tab_template {
+        children
+        pane size=1 borderless=true {
+            plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
+                format_left   "{mode} {session}"
+                format_center "{tabs}"
+                format_right  "{datetime}"
             }
         }
     }
-    pane size=1 borderless=true {
-        plugin location="status-bar"
+
+    tab name="mission-control" focus=true {
+        pane split_direction="vertical" {
+            pane size="30%" command="claude"
+            pane focus=true size="45%"
+            pane size="25%" {
+                pane size="50%" command="jj" {
+                    args "status"
+                }
+                pane size="50%" command="jj" {
+                    args "log"
+                }
+            }
+        }
     }
 
     swap_tiled_layout name="mission-control" {
