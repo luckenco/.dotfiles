@@ -1,5 +1,7 @@
 # My .'s live here 🏡
 
+> Most settings are now managed declaratively in [nix-config](https://github.com/luckenco/nix-config). This repository is kept for legacy configs and anything that has not been migrated yet.
+
 - [aerospace](https://github.com/nikitabobko/AeroSpace)
 - [alacritty](https://github.com/alacritty/alacritty)
 - `/bin`: tmux plugins
